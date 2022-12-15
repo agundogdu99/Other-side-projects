@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        nav ul li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+
+        }
+
+
+        nav li ul {
+            float: left;
+            padding: 0 20px;
+        }
+
+
+        nav li a:hover {
+            background-color: #555;
+        }
+
+        nav li ul {
+            display: none;
+        }
+
+        nav li:hover ul {
+            display: block;
+            position: absolute;
+            background-color: #333;
+        }
+
+        nav li:hover ul li {
+            float: none;
+        }
+
+        */
+    </style>
+</head>
+
+<body>
+    <!-- This is the header with a height of 150px -->
+    <header style="height: 150px;">
+        <h1>My Sticky Nav Menu1</h1>
+    </header>
+
+    <!-- This is the nav menu with a sticky position -->
+    <nav>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+
+            <!-- This is the dropdown menu with 3 links -->
+            <li>
+                <a href="#">Dropdown</a>
+                <ul>
+                    <li><a href="#">Dropdown Link 1</a></li>
+                    <li><a href="#">Dropdown Link 2</a></li>
+                    <li><a href="#">Dropdown Link 3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the CSS for the nav menu -->
+
+
+</body>
+
+</html>
