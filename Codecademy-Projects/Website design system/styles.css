@@ -1,0 +1,58 @@
+body {
+    box-sizing: border-box;
+}
+
+.colors {
+    margin: 50px auto;
+}
+
+.palette-container {
+    display:inline-flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.palette {
+    margin: 10px 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.35rem;
+}
+
+/* .palette h2, palette p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.pink {
+    background-color: #ffc6ff;
+}
+
+.lilac {
+    background-color: #bdb2ff;
+}
+
+.sky-blue {
+    background-color: #a0c4ff;
+}
+
+.yellow {
+    background-color: #fdffb6;
+}
+
+.red-ish {
+    background-color: #ffadad;
+}
+
+.timeless {
+    background-color: #f1f1ea;
+}
