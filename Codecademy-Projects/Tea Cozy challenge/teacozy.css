@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-color: black;
+    color: seashell;
+    font-size: 22px;
+}
+ 
+/* NAV */
+
+.navbar {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbrand {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.navbrand img {
+    height: 50px;
+}
+
+.links {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.link-ul {
+    margin-right: 10px;
+    display: inline-flex;
+    
+}
+
+a {
+    color: seashell;
+}
+
+/* Mission Section */
+
+.mission-container {
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    margin: 69px auto 0;
+    
+}
+
+.text-mission {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+/* Tea of the month section */
+
+.month-heading {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.month-container {
+    display: flex;
+    justify-content: center;
+}
+
+.month-images {
+    max-width: 1000px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.imagine-container img {
+    height: 200px;
+    width: 300px;
+    padding-top: 20px;
+    
+}
+
+.imagine-container h4{
+    margin-top: 3px;
+}
+
+/* LOCATIONS SECTION */
+
+.location-container {
+    margin: 50px auto;
+    height: 700px;
+    width: 1200px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-repeat:no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.location-row {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.location-row h2 {
+    margin: 0;
+}
+
+.address-row {
+    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.address-container {
+    
+    width: 25%;
+    text-align: center;
+    background-color: black;
+    padding: 15px;
+    margin: 15px 20px;
+}
