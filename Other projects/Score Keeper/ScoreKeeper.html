@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./ScoreKeeper.css">
+    <title>ScoreKeeper Project</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="image-container image">
+            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+                alt="">
+        </div>
+        <div class="title">
+            <h4 class="">Ping Pong Score Keeper</h4>
+        </div>
+        <div class="main-content">
+            <h5 class="score"><span class="p1display">0</span> to <span class="p2display">0</span></h5>
+            <span class="instructions">Click buttons below to keep the score</span>
+        </div>
+
+
+        <div class="select is-small">
+            <label for="play-upto">Playing Upto: </label>
+            <select name="play-upto" id="play-upto" class="is-inline-block">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <div class="buttons-container buttons card-footer">
+            <button class="button is-primary auto card-footer-item">+1 Player 1</button>
+            <button class="button is-link auto card-footer-item">+1 Player 2</button>
+            <button class="button is-danger auto card-footer-item">Reset</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./ScoreKeeper.js"></script>
+</body>
+
+</html>
