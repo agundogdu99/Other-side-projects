@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lottery.css">
+    <title>Ahmet's Lottery Generator</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ahmet's Lottery Generator</h1>
+    </header>
+
+
+    <section>
+
+        <div class="resultsContainer">
+            <p id="result">-</p>
+        </div>
+
+        <div class="inputsContainer">
+
+            <div class="selectionContainer">
+                <label for="selection">How Many numbers do you want to Generate?</label>
+                <select name="selection" id="selection">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6" selected>6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+
+            <div class="rangeContainer">
+                <label for="maxRange">Please enter upper range: </label>
+                <input type="number" name="maxRange" id="maxRange" min="1" max="100" value="49">
+                <br><span id="italic">(Default 1 - 49)</span>
+            </div>
+
+            <div class="luckyContainer">
+                <button id="luckyButton">I'm Feeling Lucky</button>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <script src="./lottery.js"></script>
+</body>
+
+</html>
