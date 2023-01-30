@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: #e0e1dd;
+    font-family: 'Urbanist', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?clouds');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+input {
+    background-color: #292d31;
+    color: rgb(224, 225, 221);
+    font-family: 'Urbanist', sans-serif;
+    width: 60%;
+    border-radius: 18px;
+    height: 2.5rem;
+    padding: 10px;
+    border: 1px solid #e0e1dd;
+}
+
+input:hover {
+    background-color: rgba(224, 225, 221, 0.212);
+    /* outline: none; */
+}
+
+input:focus {
+    background-color: rgba(224, 225, 221, 0.212);
+    box-shadow: rgba(224, 225, 221, 0.3) 0px 4px 10px, rgba(224, 225, 221, 0.3) 4px 0px 10px;
+    outline: none;
+}
+
+
+button {
+    background-color: #292d31;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color:rgba(224, 225, 221, 0.212);
+ 
+}
+
+.mainContainer {
+    background-color: rgba(13, 27, 42, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    width: 450px;
+    /* height: 300px; */
+    margin: 100px auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+}
+
+.searchContainer {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.locationContainer {
+    text-align: center;
+}
+
+.data {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.weatherInfoContainer {
+    text-align: left;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    bottom: 0px;
+    /* padding: 20px; */
+    margin: 30px auto;
+    width: 50%;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    margin: 30px auto;
+    width: 50%;
+}
+
+.weatherInfoContainer p {
+    line-height: 2rem;
+}
+
+#temperature {
+    font-size: 2rem;
+}
+
+#location {
+    font-size: 1.5rem;
+    font-weight: 700;
+}

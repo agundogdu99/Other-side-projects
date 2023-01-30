@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./weather.css">
+    <title>Ahmet's Weather App</title>
+</head>
+
+<body>
+    <!-- Main Cointainer -->
+    <section class="mainContainer">
+        <!-- Search Container -->
+        <div class="searchContainer">
+            <input type="search" name="searchBar" id="searchBar" placeholder="Search for CITY">
+            <button id="searchButton" type="submit"><img src="./images/icons8-searchwhite.svg" alt=""></button>
+        </div>
+        <div class="locationContainer">
+            <p id="weatherDescription"><span id="location">CITY</span></p>
+        </div>
+
+
+        <div class="data">
+            <div class="weatherInfoContainer">
+
+                <p>Feels Like: &nbsp&nbsp<span id="feelsLike"></span></p>
+                <p>Min: &nbsp&nbsp<span id="minTemp"></span>
+                </p>
+                <p>Max: &nbsp&nbsp<span id="maxTemp"></span></p>
+                <p>Humidity: &nbsp&nbsp<span id="humidity"></span></p>
+                <p>Wind Speed: &nbsp&nbsp<span id="windSpeed"></span></p>
+                <p>Wind Direction: &nbsp&nbsp<span id="windDirection"></span></p>
+
+            </div>
+
+            <div class="imageContainer">
+                <p id="temperature"></p>
+                <img id="icon" src="" alt="">
+                <p id="description"></p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./weather1.js"></script>
+</body>
+
+</html>
