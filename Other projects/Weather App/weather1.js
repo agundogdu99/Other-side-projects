@@ -1,4 +1,4 @@
-apiKey = "ba8240ac7089faca4a60770f12e8b51b"
+apiKey = "bd0208e023d11e0461e6560242b3e1bb"
     // city: document.querySelector('searchBar').value,
 async function getData(city) {
     try {
@@ -48,3 +48,46 @@ async function getData(city) {
         }
     })
 
+
+
+    // const apiKey = "ba8240ac7089faca4a60770f12e8b51b";
+
+    // async function getWeatherData(city) {
+    //   try {
+    //     const response = await fetch(
+    //       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+    //     );
+    //     const weatherData = await response.json();
+    //     return weatherData;
+    //   } catch (error) {
+    //     console.error(error);
+    //     return error;
+    //   }
+    // }
+    
+    // const searchBar = document.getElementById("searchBar");
+    // const searchButton = document.getElementById("searchButton");
+    
+    // searchButton.addEventListener("click", async () => {
+    //   const city = searchBar.value;
+    //   const weatherData = await getWeatherData(city);
+      
+    //   document.getElementById("location").innerText = `${weatherData.name}, ${weatherData.sys.country}`;
+    //   document.getElementById("description").innerText = weatherData.weather[0].description;
+    //   document.getElementById("temperature").innerText = `${weatherData.main.temp}℃`;
+    //   document.getElementById("feelsLike").innerText = `${weatherData.main.feels_like}℃`;
+    //   document.getElementById("minTemp").innerText = `${weatherData.main.temp_min}℃`;
+    //   document.getElementById("maxTemp").innerText = `${weatherData.main.temp_max}℃`;
+    //   document.getElementById("humidity").innerText = `${weatherData.main.humidity}%`;
+    //   document.getElementById("windSpeed").innerText = `${weatherData.wind.speed} Km/h`;
+    //   document.getElementById("windDirection").innerText = `${weatherData.wind.deg}°`;
+    //   document.getElementById("icon").src = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
+    //   document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${city}')`;
+    // });
+    
+    // searchBar.addEventListener("keypress", (event) => {
+    //   if (event.key === "Enter") {
+    //     searchButton.click();
+    //   }
+    // });
+    

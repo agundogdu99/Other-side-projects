@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./currency.css">
+    <title>Ahmet's Currency Converter</title>
+</head>
+
+<body>
+
+    <section class="mainContainer">
+        <h1>Ahmet's Currency Converter</h1>
+        <form action="#">
+            <div class="amountContainer">
+                <label for="amountInput">Enter Amount</label>
+                <input type="number" name="amountInput" id="amountInput" min="1" value="1">
+            </div>
+            <div class="selectionContainers">
+                <div class="fromSelectionContainer">
+                    <p>From</p>
+                    <div class="selectBox fromSelect">
+                        <img src="https://flagcdn.com/48x36/gb.png" alt="flag">
+                        <select name="fromSelection" id="fromSelection"></select>
+                    </div>
+                </div>
+                <div class="swap"><button type="submit" id="swapButton">SWAP</button></div>
+                <div class="toSelectionContainer">
+                    <p>From</p>
+                    <div class="selectBox toSelect">
+                        <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                        <select name="toSelection" id="toSelection"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exchange-rate">Getting exchange rate...</div>
+            <button type="submit" id="exchangeButton">Get Exchange Rate</button>
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="./countries.js"></script>
+    <script src="./currency.js"></script>
+</body>
+
+</html>

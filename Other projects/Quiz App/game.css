@@ -1,0 +1,92 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.7rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(113, 201, 236, 0.226);
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-left:  2rem;
+    margin-right: 2rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    font-weight: 600;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: rgba(90, 4, 79, 0.788);
+    color: white;
+}
+
+.choice-text {
+    color: rgb(4, 112, 112);
+    align-self: center;
+    padding-left: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: rgb(24, 228, 143);
+}
+
+.incorrect {
+    background-color: rgb(223, 125, 125);
+}
+
+/* hud */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;-
+    margin-bottom: 6rem;
+}
+
+.hud-prefix {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+.hud-main-text {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+#progress-bar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid rgba(90, 4, 79, 0.788);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+#progress-bar-full {
+    height: 3.4rem;
+    background-color: rgba(179, 33, 160, 0.486);
+    width: 0%;
+}
+
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid orangered;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

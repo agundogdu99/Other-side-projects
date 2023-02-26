@@ -1,0 +1,79 @@
+@font-face {
+    font-family: pokemon;
+    src: url(./Pokemon\ Hollow.ttf);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: pokemon;
+    letter-spacing: 5px;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: darkblue;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(4, 180px);
+    gap: 10px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 3px 10px rgba(200,200,200, 0.9);
+    border-radius: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.card > .front, .card > .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.back>h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.front {
+    background-image: url('./ball.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(255, 255, 255);
+}
+
+.back img {
+    width: 80px;
+    height: 80px;
+}
+
+.rotated {
+    transform: rotateY(180deg);
+}
