@@ -14,25 +14,21 @@ def userSelection():
             userChoice = input(
                 "What is your choice?\nType in...\n1 for Rock\n2 for Paper\n3 for Scissors\nOr press 9 to exit\n"
             )
-            if userChoice == '9':
+            if userChoice == '1':
+                return 1
+            elif userChoice == '2':
+                return 2
+            elif userChoice == '3':
+                return 3
+            elif userChoice == '9':
                 print("Exiting...")
                 noSelection = False
                 break
-            elif userChoice != '1' or userChoice != '2' or userChoice != '3':
-                print("You must enter a valid selection...")
-                sleep(1)
-                userSelection()
-
             else:
-                if userChoice == '1':
-                    return 1
-                elif userChoice == '2':
-                    return 2
-                elif userChoice == '3':
-                    return 3
-                else:
-                    print("Error...")
-                noSelection = False
+                print(
+                    "Error... Please ensure you select on of the available options"
+                )
+
     except:
         pass
 
