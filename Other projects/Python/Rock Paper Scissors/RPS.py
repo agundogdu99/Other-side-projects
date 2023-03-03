@@ -83,11 +83,11 @@ def updateScore(result):
         print('This round resulted in a draw... Battle again!')
     elif result == 1:
         print('User won this round!...')
-        counter += 1
+        # counter += 1
         userScore += 1
     else:
         print('Computer won this round!...')
-        counter += 1
+        # counter += 1
         aiScore += 1
     print(f"User Score: {userScore} - Computer Score: {aiScore}")
     playGame()
@@ -96,10 +96,14 @@ def updateScore(result):
 def playGame():
     if rounds == 0:
         startGameParameters()
-    elif rounds > counter:
+    elif rounds > userScore and rounds > aiScore:
         userSelection()
     else:
         print('Game Over!')
+        if rounds == userScore:
+            print("The USER wins this game")
+        else:
+            print("Computer wins")
         playAgain = input('Would you like to play again? Y/N? ').upper()
         if playAgain == 'Y':
             startGameParameters()
